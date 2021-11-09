@@ -24,6 +24,10 @@
   cursor: pointer;
 }
 
+.a-header:active {
+  font-size: 27px;
+}
+
 .desc-span {
   font-size: 19px;
   font-style: italic;
@@ -37,9 +41,20 @@
   color: var(--light-purple);
 }
 
+.active {
+  color: var(--light-purple);
+  font-size: 29px;
+}
+
 @media (max-width: 544px) {  
   .a-header {
     font-size: 18px;
     padding: 0 5px;
+  }
+  .header-name {
+    font-size: 35px;
+  }
+  .desc-span {
+    font-size: 15px;
   }
 }
