@@ -7,6 +7,11 @@
     --electric-violet: #8b16e3;
 }
 
+.parent {
+    position: relative;
+    min-height: 100vh;
+}
+
 .a-header {
     color: white;
     text-decoration: none;
@@ -48,6 +53,8 @@
 
 .footer-container {
     height: 50px;
+    position: absolute;
+    bottom: 0;
 }
 
 @media (max-width: 544px) {
