@@ -57,6 +57,21 @@
     bottom: 0;
 }
 
+i {
+    padding-top: 12px;
+    font-size: 25px;
+}
+
+.a-footer {
+    color: white;
+    text-decoration: none;
+}
+
+.a-footer:hover {
+    color: var(--light-purple);
+    cursor: pointer;
+}
+
 @media (max-width: 544px) {
     .a-header {
         font-size: 18px;
