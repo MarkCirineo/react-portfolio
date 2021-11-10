@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import NavTabs from "./NavTabs";
-import AboutMe from "./pages/about-me";
+import AboutMe from "./pages/about-me/about-me";
 import ContactMe from "./pages/contact-me";
 import Portfolio from "./pages/portfolio";
 import Resume from "./pages/resume";
@@ -26,6 +26,19 @@ export default function PortfolioContent() {
         <div>
             <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
             {renderPage()}
+            <div className="container-fluid footer-container bg-secondary text-white">
+                <div className="row d-flex justify-content-around">
+                    <div className="col-4 text-center">
+                        Email
+                    </div>
+                    <div className="col-4 text-center">
+                        GitHub
+                    </div>
+                    <div className="col-4 text-center">
+                        LinkedIn
+                    </div>
+                </div>
+            </div>
         </div>
     )
 }
