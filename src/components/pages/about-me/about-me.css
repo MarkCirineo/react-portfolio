@@ -1,0 +1,46 @@
+.mark {
+    width: 100%;
+}
+
+.content-container {
+    height: calc(100vh - 102px - 50px); /* view height - header - footer */
+}
+
+h1 {
+    color: #660fa0;
+    text-align: center;
+}
+
+p {
+    color: #660fa0;
+    font-size: 145%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+@media (max-width: 1440px) {
+    p {
+        font-size: 120%;
+    }
+}
+
+@media (max-width: 976px) {
+    .content-container {
+        height: calc(100vh - 146px - 50px); 
+    }
+    p {
+        padding-top: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    p {
+        padding-top: 10px;
+    }
+}
+
+@media (max-width: 568px) {
+    .content-container {
+        margin-bottom: 50px;
+    }
+}
