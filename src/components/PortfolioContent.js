@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import NavTabs from "./NavTabs";
 import AboutMe from "./pages/about-me/about-me";
-import ContactMe from "./pages/contact-me";
-import Portfolio from "./pages/portfolio";
-import Resume from "./pages/resume";
+import ContactMe from "./pages/contact-me/contact-me";
+import Portfolio from "./pages/portfolio/portfolio";
+import Resume from "./pages/resume/resume";
 
 export default function PortfolioContent() {
     const [currentPage, setCurrentPage] = useState("About Me");
@@ -23,7 +23,7 @@ export default function PortfolioContent() {
     const handlePageChange = (page) => setCurrentPage(page);
 
     return (
-        <div>
+        <div className="parent">
             <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
             {renderPage()}
             <div className="container-fluid footer-container bg-secondary text-white">
