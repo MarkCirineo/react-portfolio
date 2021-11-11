@@ -1,0 +1,23 @@
+.button-a {
+    color: white !important;
+    text-decoration: none !important;
+}
+
+h4 a {
+    color: #936fff;
+    text-decoration: none;
+}
+
+h4 {
+    color: #660fa0;
+}
+
+button {
+    background-color: #936fff !important;
+}
+
+label {
+    color: #660fa0;
+    font-size: 17px;
+    font-weight: 400;
+}
