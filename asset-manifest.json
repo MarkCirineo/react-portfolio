@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/react-portfolio/static/css/main.fdb2bf24.chunk.css",
-    "main.js": "/react-portfolio/static/js/main.70166726.chunk.js",
-    "main.js.map": "/react-portfolio/static/js/main.70166726.chunk.js.map",
+    "main.js": "/react-portfolio/static/js/main.7b43e823.chunk.js",
+    "main.js.map": "/react-portfolio/static/js/main.7b43e823.chunk.js.map",
     "runtime-main.js": "/react-portfolio/static/js/runtime-main.7530632e.js",
     "runtime-main.js.map": "/react-portfolio/static/js/runtime-main.7530632e.js.map",
     "static/css/2.383c0125.chunk.css": "/react-portfolio/static/css/2.383c0125.chunk.css",
@@ -15,7 +15,6 @@
     "static/media/got-you-cupboard.7cece121.png": "/react-portfolio/static/media/got-you-cupboard.7cece121.png",
     "static/media/mark.0c50e391.png": "/react-portfolio/static/media/mark.0c50e391.png",
     "static/media/portfolio.87d3d0d4.png": "/react-portfolio/static/media/portfolio.87d3d0d4.png",
-    "static/media/resume.2706fc47.pdf": "/react-portfolio/static/media/resume.2706fc47.pdf",
     "static/media/tech-blog.7d31aa1c.png": "/react-portfolio/static/media/tech-blog.7d31aa1c.png",
     "static/media/workout-tracker.aa4b19b4.png": "/react-portfolio/static/media/workout-tracker.aa4b19b4.png"
   },
@@ -24,6 +23,6 @@
     "static/css/2.383c0125.chunk.css",
     "static/js/2.40500363.chunk.js",
     "static/css/main.fdb2bf24.chunk.css",
-    "static/js/main.70166726.chunk.js"
+    "static/js/main.7b43e823.chunk.js"
   ]
 }
