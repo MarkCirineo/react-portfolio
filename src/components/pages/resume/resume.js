@@ -1,5 +1,6 @@
 import React from "react";
 import "./resume.css"
+import resume from "./resume.pdf"
 
 export default function Resume() {
 
@@ -8,7 +9,7 @@ export default function Resume() {
             <div className="row col-10 col-xl-12">
                 <div className="d-flex align-items-center flex-column">
                     <h1>Resume</h1>
-                    <a href="/resume.2706fc47.pdf" target="_blank" rel="noreferrer" className="resume" download>Download my resume!</a>
+                    <a href={resume} target="_blank" rel="noreferrer" className="resume" download>Download my resume!</a>
                 </div>
                 <div className="container">
                     <div className="row d-flex justify-content-center">
