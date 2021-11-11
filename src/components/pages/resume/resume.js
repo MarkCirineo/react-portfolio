@@ -8,7 +8,7 @@ export default function Resume() {
             <div className="row col-10 col-xl-12">
                 <div className="d-flex align-items-center flex-column">
                     <h1>Resume</h1>
-                    <a href="/resume.pdf" to="/resume.pdf" target="_blank" rel="noreferre" className="resume" download>Download my resume!</a>
+                    <a href="/resume.pdf" to="/react-portfolio/resume.pdf" target="_blank" rel="noreferrer" className="resume" download>Download my resume!</a>
                 </div>
                 <div className="container">
                     <div className="row d-flex justify-content-center">
