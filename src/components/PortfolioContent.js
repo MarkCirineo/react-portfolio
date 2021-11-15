@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Footer from "./footer";
 import NavTabs from "./NavTabs";
 import AboutMe from "./pages/about-me/about-me";
 import ContactMe from "./pages/contact-me/contact-me";
@@ -26,19 +27,7 @@ export default function PortfolioContent() {
         <div className="parent">
             <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
             {renderPage()}
-            <div className="container-fluid footer-container bg-secondary text-white">
-                <div className="row d-flex justify-content-around">
-                    <div className="col-4 text-center">
-                    <a href="https://www.github.com/markcirineo" target="_blank" rel="noreferrer" className="a-footer" ><i className="fab fa-github"></i></a>
-                    </div>
-                    <div className="col-4 text-center">
-                    <a href="mailto:markcirineo22@gmail.com" className="a-footer" ><i className="fas fa-envelope"></i></a>
-                    </div>
-                    <div className="col-4 text-center">
-                        <a href="https://www.linkedin.com/in/mark-cirineo/" target="_blank" rel="noreferrer" className="a-footer"><i className="fab fa-linkedin"></i></a>
-                    </div>
-                </div>
-            </div>
+            <Footer />
         </div>
     )
 }
