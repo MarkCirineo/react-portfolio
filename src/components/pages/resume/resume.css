@@ -5,8 +5,9 @@
     font-size: 24px;
 }
 
-h1 {
+.resume-h1 {
     padding-top: 5px;
+    color: #660fa0;
 }
 
 h3 {
