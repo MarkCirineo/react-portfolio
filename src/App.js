@@ -5,6 +5,7 @@ import AboutMe from "./components/pages/about-me/about-me";
 import ContactMe from "./components/pages/contact-me/contact-me";
 import Portfolio from "./components/pages/portfolio/portfolio";
 import Resume from "./components/pages/resume/resume";
+import Home from "./components/pages/home/home";
 import { HashRouter, Route, Routes } from "react-router-dom";
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
             <HashRouter>
                 <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
                 <Routes>
+                    <Route path="/" element={ <Home /> } />
                     <Route path="/about-me" element={ <AboutMe /> } />
                     <Route path="/portfolio" element={ <Portfolio /> } />
                     <Route path="/contact-me" element={ <ContactMe /> } />
