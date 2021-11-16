@@ -8,7 +8,7 @@ export default function AboutMe() {
         <div className="container-fluid content-container">
             <div className="row d-flex justify-content-center">
                 <div className="col-lg-4 col-md-8 col-sm-9 col-xs-12 justify-content-center">
-                    <h1>About Me</h1>
+                    <h1 className="about-me-h1">About Me</h1>
                     <img alt="me" src={mark} className="mark" />
                 </div>
                 <div className="col-lg-8 col-md-12 d-flex align-items-center">
