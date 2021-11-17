@@ -1,0 +1,78 @@
+.home-div {
+    margin-top: 100px;
+    font-style: italic;
+    background-color: #6c757d;
+    padding: 50px 0;
+    border-radius: 10px;
+}
+
+.home-h1 {
+    color: white;
+    font-size: 70px;
+    text-align: center;
+    padding: 0 25px;
+}
+
+.home-name {
+    color: #c6b5fa;   
+}
+
+.home-h2 {
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    padding-top: 10px;
+    padding: 0 25px;
+}
+
+.home-link-div {
+    background-color: #6c757d;
+    margin: 50px 0 75px 0;
+    padding: 20px 0 10px 0;
+    border-radius: 10px;
+}
+
+.link {
+    background-color: #dcd1ff;
+    border-radius: 3px;
+    margin: 10px 0;
+    padding: 6px;
+    font-weight: 600;
+    color: #626a70;
+    text-decoration: none;
+}
+
+.link:hover {
+    color: #8b16e3;
+    padding: 7px;
+}
+
+@media (max-width: 1280px) {
+    .home-div {
+        margin-top: 85px;
+    }
+    .home-h1 {
+        font-size: 60px;
+    }
+    .home-h2 {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .home-div {
+        margin-top: 65px;
+    }
+}
+
+@media (max-width: 500px) {
+    .home-div {
+        margin-top: 35px;
+    }
+    .home-h1 {
+        font-size: 45px;
+    }
+    .home-h2 {
+        font-size: 30px;
+    }
+}
