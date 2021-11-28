@@ -11,7 +11,7 @@ export default function AboutMe() {
                     <h1 className="about-me-h1">About Me</h1>
                 </div>
             </div>
-            <div className="container-fluid content-container about-me-parent d-flex">
+            <div className="container-fluid content-container about-me-parent d-flex justify-content-center">
                 <div className="row d-flex justify-content-evenly" id="content-width">
                     <div className="col-xl-3 col-lg-6 col-sm-9 col-xs-12 justify-content-center bg-secondary image-div">
                         <img alt="me" src={mark} className="mark-img" />
