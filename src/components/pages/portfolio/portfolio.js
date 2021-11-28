@@ -56,10 +56,11 @@ export default function Portfolio() {
     ]
 
     return (
-        <section className="work row d-flex flex-column align-items-center" id="work">
+        <section className="work d-flex flex-column align-items-center" id="work">
             <div className="col-xl-9 col-md-11 row row-cols-lg-2 row-cols-md-2 mb-4 g-4">
-                {data.map((project) => {
-                    return <PortfolioCard 
+                {data.map((project, index) => {
+                    return <PortfolioCard
+                    key={index} 
                     name={project.name}
                     image={project.image} 
                     description={project.description} 
