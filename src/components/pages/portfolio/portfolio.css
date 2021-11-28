@@ -18,3 +18,8 @@
 .card-link:hover {
     color: white;
 }
+
+.technologies {
+    color: black;
+    font-size: 18px;
+}
