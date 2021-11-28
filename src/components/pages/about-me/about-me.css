@@ -28,6 +28,10 @@
     padding: 20px 0 70px;
 }
 
+#content-width {
+    width: 100%;
+}
+
 .image-div {
     padding: 12px;
     border-radius: 8px;
