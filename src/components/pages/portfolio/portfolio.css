@@ -1,7 +1,25 @@
 .work {
-    padding-bottom: 50px;
+    padding: 50px 0;
 }
 
 .card-title {
     color: #660fa0;
+}
+
+.card-link {
+    text-decoration: none;
+    background-color: rgb(198, 181, 250);
+    color: rgb(68, 70, 71);
+    font-weight: 500;
+    padding: 9px 9px;
+    border-radius: 4px;
+}
+
+.card-link:hover {
+    color: white;
+}
+
+.technologies {
+    color: black;
+    font-size: 18px;
 }

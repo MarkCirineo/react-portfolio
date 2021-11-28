@@ -2,102 +2,79 @@ import React from "react";
 import PortfolioCard from "./portfolioCard";
 import "./portfolio.css"
 import techBlog from "./images/tech-blog.png";
-import gotYouCupboard from "./images/got-you-cupboard.png"
-import workoutTracker from "./images/workout-tracker.png"
-import portfolio from "./images/portfolio.png"
+import gotYouCupboard from "./images/got-you-cupboard.png";
+import workoutTracker from "./images/workout-tracker.png";
+import portfolio from "./images/portfolio.png";
+import bingeworthy from "./images/bingeworthy.png";
+import bookSearchEngine from "./images/book-search-engine.png";
 
 export default function Portfolio() {
 
-    const data = {
-        projectOne: {
+    const data = [
+        {
+            name: "Tech Blog",
+            technologies: "ExpressJS, MySQL, Sequelize, NodeJS",
+            image: techBlog,
+            description: "A full-stack tech blog site that allows users to create an account and log in. Once logged in users can create, update and delete their own blog posts via authentication. Users can also view posts made by other users.",
+            githubLink: "https://github.com/MarkCirineo/tech-blog",
+            deployedLink: "https://rocky-inlet-23725.herokuapp.com/"
+        },
+        {
+            name: "BingeWorthy",
+            technologies: "MERN Stack",
+            image: bingeworthy,
+            description: "This is a full-stack application designed for movie lovers who want a centralized location for all the movies they want to watch. Users can search for any title, view more information about the movie, and add it to their account for future reference.",
+            githubLink: "https://github.com/MarkCirineo/bingeworthy",
+            deployedLink: "https://calm-taiga-38622.herokuapp.com/"
+        },
+        {
+            name: "Book Search Engine",
+            technologies: "GraphQL, ExpressJS",
+            image: bookSearchEngine,
+            description: "The web app allows you to search for books that you would like to purchase. When you create an account you can save books to a list. You can view all you saved books and remove ones as you wish. Refactored from a RESTful API to a GraphQL API.",
+            githubLink: "https://github.com/MarkCirineo/book-search-engine",
+            deployedLink: "https://morning-dusk-09419.herokuapp.com/"
+        },
+        {
             name: "Got You Cupboard",
+            technologies: "JavaScript, Materialize",
             image: gotYouCupboard,
             description: "This website allows you to search for recipes using just ingredients. You can also search for nearby grocery stores. This sites utilizes Edamam's and MapQuest's APIs. It was build using HTML, CSS, JavaScript, and Materialize.",
             githubLink: "https://github.com/markcirineo/got-you-cupboard",
             deployedLink: "https://markcirineo.github.io/got-you-cupboard/"
         },
-        projectTwo: {
-            name: "Tech Blog",
-            image: techBlog,
-            description: "This tech blog allows you to make and account and make and delete posts. You can also view posts from other users.",
-            githubLink: "https://github.com/MarkCirineo/tech-blog",
-            deployedLink: "https://rocky-inlet-23725.herokuapp.com/"
-        },
-        projectThree: {
-            name: "Workout Tracker",
-            image: workoutTracker,
-            description: "This web app is a simple workout tracker. You can create workouts and add exercises to them. You can also view your dashboard with a graph of previous workouts.",
-            githubLink: "https://github.com/MarkCirineo/workout-tracker",
-            deployedLink: "https://obscure-earth-62239.herokuapp.com/?id=61856f4fe3e3fb0016bf626c"
-        },
-        projectFour: {
+        {
             name: "Portfolio",
+            technologies: "React.js",
             image: portfolio,
             description: "This is the website you are looking at right now! It's a display of my previous work and how to contact me. It was built using ReactJS.",
             githubLink: "https://github.com/MarkCirineo/react-portfolio",
             deployedLink: "https://markcirineo.github.io/react-portfolio"
         },
-        // projectFive: {
-        //     name: "",
-        //     image: "",
-        //     description: "",
-        //     githubLink: "",
-        //     deployedLink: ""
-        // },
-        // projectSix: {
-        //     name: "",
-        //     image: "",
-        //     description: "",
-        //     githubLink: "",
-        //     deployedLink: ""
-        // },
-    }
+        {
+            name: "Workout Tracker",
+            technologies: "ExpressJS, MongoDB, Mongoose, NodeJS",
+            image: workoutTracker,
+            description: "This web app is a simple workout tracker. You can create workouts and add exercises to them. You can also view your dashboard with a graph of previous workouts.",
+            githubLink: "https://github.com/MarkCirineo/workout-tracker",
+            deployedLink: "https://obscure-earth-62239.herokuapp.com/?id=61856f4fe3e3fb0016bf626c"
+        }
+    ]
 
     return (
-        <section className="work row d-flex flex-column align-items-center" id="work">
+        <section className="work d-flex flex-column align-items-center" id="work">
             <div className="col-xl-9 col-md-11 row row-cols-lg-2 row-cols-md-2 mb-4 g-4">
-                <PortfolioCard 
-                    name={data.projectOne.name}
-                    image={data.projectOne.image} 
-                    description={data.projectOne.description} 
-                    githubLink={data.projectOne.githubLink}
-                    deployedLink={data.projectOne.deployedLink}
-                />
-                <PortfolioCard 
-                    name={data.projectTwo.name}
-                    image={data.projectTwo.image}
-                    description={data.projectTwo.description}   
-                    githubLink={data.projectTwo.githubLink}
-                    deployedLink={data.projectTwo.deployedLink}
-                />
-                <PortfolioCard 
-                    name={data.projectThree.name}
-                    image={data.projectThree.image}
-                    description={data.projectThree.description}   
-                    githubLink={data.projectThree.githubLink}
-                    deployedLink={data.projectThree.deployedLink}
-                />
-                <PortfolioCard 
-                    name={data.projectFour.name}
-                    image={data.projectFour.image} 
-                    description={data.projectFour.description}  
-                    githubLink={data.projectFour.githubLink}
-                    deployedLink={data.projectFour.deployedLink}
-                />
-                {/* <PortfolioCard 
-                    name={data.projectFive.name}
-                    image={data.projectFive.image}
-                    description={data.projectFive.description}   
-                    githubLink={data.projectFive.githubLink}
-                    deployedLink={data.projectFive.deployedLink}
-                />
-                <PortfolioCard 
-                    name={data.projectSix.name}
-                    image={data.projectSix.image} 
-                    description={data.projectSix.description}  
-                    githubLink={data.projectSix.githubLink}
-                    deployedLink={data.projectSix.deployedLink}
-                /> */}
+                {data.map((project, index) => {
+                    return <PortfolioCard
+                    key={index} 
+                    name={project.name}
+                    technologies={project.technologies}
+                    image={project.image} 
+                    description={project.description} 
+                    githubLink={project.githubLink}
+                    deployedLink={project.deployedLink}
+                    />
+                })}
             </div>
         </section>
     )
