@@ -13,6 +13,7 @@ export default function Portfolio() {
     const data = [
         {
             name: "Tech Blog",
+            technologies: "ExpressJS, MySQL, Sequelize, NodeJS",
             image: techBlog,
             description: "A full-stack tech blog site that allows users to create an account and log in. Once logged in users can create, update and delete their own blog posts via authentication. Users can also view posts made by others users.",
             githubLink: "https://github.com/MarkCirineo/tech-blog",
@@ -20,6 +21,7 @@ export default function Portfolio() {
         },
         {
             name: "BingeWorthy",
+            technologies: "MERN Stack",
             image: bingeworthy,
             description: "This is a full-stack application designed for movie lovers who want a centralized location for all the movies they want to watch. Users can search for any title, view more information about the movie, and add it to their account for future reference.",
             githubLink: "https://github.com/MarkCirineo/bingeworthy",
@@ -27,6 +29,7 @@ export default function Portfolio() {
         },
         {
             name: "Book Search Engine",
+            technologies: "GraphQL, ExpressJS",
             image: bookSearchEngine,
             description: "The web app allows you to search for books that you would like to purchase. When you create an account you can save books to a list. You can view all you saved books and remove ones as you wish. Refactored from a RESTful API to a GraphQL API.",
             githubLink: "https://github.com/MarkCirineo/book-search-engine",
@@ -34,6 +37,7 @@ export default function Portfolio() {
         },
         {
             name: "Got You Cupboard",
+            technologies: "JavaScript, Materialize",
             image: gotYouCupboard,
             description: "This website allows you to search for recipes using just ingredients. You can also search for nearby grocery stores. This sites utilizes Edamam's and MapQuest's APIs. It was build using HTML, CSS, JavaScript, and Materialize.",
             githubLink: "https://github.com/markcirineo/got-you-cupboard",
@@ -41,6 +45,7 @@ export default function Portfolio() {
         },
         {
             name: "Portfolio",
+            technologies: "React.js",
             image: portfolio,
             description: "This is the website you are looking at right now! It's a display of my previous work and how to contact me. It was built using ReactJS.",
             githubLink: "https://github.com/MarkCirineo/react-portfolio",
@@ -48,6 +53,7 @@ export default function Portfolio() {
         },
         {
             name: "Workout Tracker",
+            technologies: "ExpressJS, MongoDB, Mongoose, NodeJS",
             image: workoutTracker,
             description: "This web app is a simple workout tracker. You can create workouts and add exercises to them. You can also view your dashboard with a graph of previous workouts.",
             githubLink: "https://github.com/MarkCirineo/workout-tracker",
@@ -62,6 +68,7 @@ export default function Portfolio() {
                     return <PortfolioCard
                     key={index} 
                     name={project.name}
+                    technologies={project.technologies}
                     image={project.image} 
                     description={project.description} 
                     githubLink={project.githubLink}
