@@ -15,7 +15,7 @@ export default function Portfolio() {
             name: "Tech Blog",
             technologies: "ExpressJS, MySQL, Sequelize, NodeJS",
             image: techBlog,
-            description: "A full-stack tech blog site that allows users to create an account and log in. Once logged in users can create, update and delete their own blog posts via authentication. Users can also view posts made by others users.",
+            description: "A full-stack tech blog site that allows users to create an account and log in. Once logged in users can create, update and delete their own blog posts via authentication. Users can also view posts made by other users.",
             githubLink: "https://github.com/MarkCirineo/tech-blog",
             deployedLink: "https://rocky-inlet-23725.herokuapp.com/"
         },
