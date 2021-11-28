@@ -1,4 +1,4 @@
-.mark {
+.mark-img {
     width: 100%;
 }
 
@@ -6,32 +6,75 @@
     padding-bottom: 50px;
 }
 
+.h1-parent {
+    margin: 15px 0 0 0;
+    border-radius: 8px;
+    padding: 2px 0;
+}
+
 .about-me-h1 {
-    color: #660fa0;
+    color: #d9cdff;
     text-align: center;
 }
 
 .about-me-p {
-    color: #660fa0;
-    font-size: 145%;
-    padding-left: 10%;
-    padding-right: 10%;
+    color: white;
+    font-size: 190%;
+    padding: 20px 10%;
+    margin-bottom: 0;
 }
 
-@media (max-width: 1440px) {
-    p {
-        font-size: 120%;
+.about-me-parent {
+    padding: 20px 0 70px;
+}
+
+.image-div {
+    padding: 12px;
+    border-radius: 8px;
+}
+
+.description-div {
+    border-radius: 8px;
+    margin-top: 15px!important;
+}
+
+@media (max-width: 1680px) {
+    .about-me-p {
+        font-size: 145%;
     }
 }
 
-@media (max-width: 976px) {
-    p {
-        padding-top: 15px;
+@media (max-width: 1220px) {
+    .about-me-p {
+        font-size: 125%;     
     }
+}
+
+@media (max-width: 991px) {
+    .about-me-p {
+        font-size: 130%;
+    }  
 }
 
 @media (max-width: 768px) {
-    p {
-        padding-top: 10px;
+    .about-me-p {
+        font-size: 130%;
+    }
+}
+
+@media (max-width: 575px) {
+    .image-div, .description-div {
+        border-radius: 0;
+    }
+    .description-div {
+        margin-top: 0px!important;
+    }
+    .about-me-parent {
+        padding: 0 0 50px 0;
+    }
+    .h1-parent {
+        margin: 0;
+        border-radius: 0;
+        padding: 2px 0;
     }
 }

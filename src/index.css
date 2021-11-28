@@ -1,7 +1,7 @@
 :root {
     --botticelli: #d2d9e6;
     --purple: #660fa0;
-    --light-purple: #c6b5fa;
+    --light-purple: #d9cdff;
     --dark-gray: #353535;
     --cararra: #e7e7e0;
     --electric-violet: #8b16e3;
@@ -77,10 +77,10 @@ i {
     cursor: pointer;
 }
 
-@media (max-width: 544px) {
+@media (max-width: 575px) {
     .a-header {
         font-size: 18px;
-        padding: 0 5px;
+        padding: 0 3px;
     }
     .header-name {
         font-size: 35px;
