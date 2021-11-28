@@ -11,10 +11,10 @@ export default function AboutMe() {
             </div>
             <div className="container-fluid content-container about-me-parent d-flex">
                 <div className="row d-flex justify-content-evenly">
-                    <div className="col-lg-3 col-md-8 col-sm-9 col-xs-12 justify-content-center bg-secondary image-div">
+                    <div className="col-xl-3 col-lg-6 col-sm-9 col-xs-12 justify-content-center bg-secondary image-div">
                         <img alt="me" src={mark} className="mark-img" />
                     </div>
-                    <div className="col-lg-7 col-sm-11 d-flex align-items-center text-center bg-secondary description-div">
+                    <div className="col-lg-10 col-sm-11 d-flex align-items-center text-center bg-secondary description-div">
                         <p className="about-me-p">
                             My name is Mark. I am a Full-stack web developer with a certificate from the University of Pennsylvania. 
                             I'm proficient in HTML, CSS, JavaScript, MySQL, and MongoDB. I enjoy working with technologies including Node.js, Express.js, and ReactJS.
