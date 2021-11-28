@@ -6,11 +6,13 @@ export default function AboutMe() {
 
     return (
         <div>
-            <div className="container-fluid d-flex justify-content-center bg-secondary col-sm-6 col-md-4 col-xs-12 col-12 h1-parent">
-                <h1 className="about-me-h1">About Me</h1>
+            <div className="d-flex justify-content-center">
+                <div className="container-fluid d-flex justify-content-center bg-secondary col-sm-6 col-md-4 col-xs-12 col-12 h1-parent">
+                    <h1 className="about-me-h1">About Me</h1>
+                </div>
             </div>
-            <div className="container-fluid content-container about-me-parent d-flex">
-                <div className="row d-flex justify-content-evenly">
+            <div className="container-fluid content-container about-me-parent d-flex justify-content-center">
+                <div className="row d-flex justify-content-evenly" id="content-width">
                     <div className="col-xl-3 col-lg-6 col-sm-9 col-xs-12 justify-content-center bg-secondary image-div">
                         <img alt="me" src={mark} className="mark-img" />
                     </div>
