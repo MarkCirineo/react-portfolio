@@ -77,10 +77,10 @@ i {
     cursor: pointer;
 }
 
-@media (max-width: 544px) {
+@media (max-width: 575px) {
     .a-header {
         font-size: 18px;
-        padding: 0 5px;
+        padding: 0 3px;
     }
     .header-name {
         font-size: 35px;
