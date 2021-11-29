@@ -5,17 +5,17 @@ import resume from "./resume.pdf"
 export default function Resume() {
 
     return (
-        <div className="container d-flex justify-content-center" >
+        <div className="container d-flex justify-content-center main-resume-div">
             <div className="row col-10 col-xl-12">
                 <div className="d-flex align-items-center flex-column">
                     <h1 className="resume-h1">Resume</h1>
                     <a href={resume} target="_blank" rel="noreferrer" className="resume" download>Download my resume!</a>
                 </div>
                 <div className="container">
-                    <div className="row d-flex justify-content-center">
-                        <div className="col-lg-6 col-md-12 d-flex flex-column align-items-center">  
+                    <div className="row d-flex justify-content-evenly">
+                        <div className="col-xl-5 col-lg-10 col-md-12 col-12 d-flex flex-column align-items-center front-end-div">  
                             <h3>Front-end Proficiencies</h3>
-                            <ul className="resume-ul">
+                            <ul className="resume-ul text-center">
                                 <li>HTML</li>
                                 <li>CSS</li>
                                 <li>JavaScript</li>
@@ -24,9 +24,9 @@ export default function Resume() {
                                 <li>Bootstrap</li>
                             </ul>
                         </div>
-                        <div className="col-lg-6 col-md-12 d-flex flex-column align-items-center">  
+                        <div className="col-xl-5 col-lg-10 col-md-12 col-12 d-flex flex-column align-items-center back-end-div">  
                             <h3>Back-end Proficiencies</h3>
-                            <ul className="resume-ul">
+                            <ul className="resume-ul text-center">
                                 <li>Node</li>
                                 <li>Express</li>
                                 <li>MySQL</li>
