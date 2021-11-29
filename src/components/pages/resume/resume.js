@@ -5,11 +5,13 @@ import resume from "./resume.pdf"
 export default function Resume() {
 
     return (
-        <div className="container d-flex justify-content-center main-resume-div">
+        <div className="container-fluid d-flex justify-content-center main-resume-div">
             <div className="row col-10 col-xl-12">
-                <div className="d-flex align-items-center flex-column">
-                    <h1 className="resume-h1">Resume</h1>
-                    <a href={resume} target="_blank" rel="noreferrer" className="resume" download>Download my resume!</a>
+                <div className="justify-content-center d-flex containter-fluid mt-3 mb-2">
+                    <div className="d-flex align-items-center flex-column resume-header col-12 col-md-10 col-lg-7 col-xl-5">
+                        <h1 className="resume-h1">Resume</h1>
+                        <a href={resume} target="_blank" rel="noreferrer" className="resume text-center" download>Download my resume!</a>
+                    </div>
                 </div>
                 <div className="container">
                     <div className="row d-flex justify-content-evenly">
