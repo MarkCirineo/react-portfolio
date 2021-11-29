@@ -18,11 +18,11 @@ export default function Resume() {
                         <div className="col-xl-5 col-lg-10 col-md-12 col-12 d-flex flex-column align-items-center front-end-div">  
                             <h3>Front-end Proficiencies</h3>
                             <ul className="resume-ul text-center">
+                                <li>React</li>
+                                <li>JavaScript</li>
                                 <li>HTML</li>
                                 <li>CSS</li>
-                                <li>JavaScript</li>
                                 <li>jQuery</li>
-                                <li>React</li>
                                 <li>Bootstrap</li>
                             </ul>
                         </div>
@@ -31,10 +31,10 @@ export default function Resume() {
                             <ul className="resume-ul text-center">
                                 <li>Node</li>
                                 <li>Express</li>
-                                <li>MySQL</li>
-                                <li>Sequelize</li>
                                 <li>MongoDB</li>
                                 <li>Mongoose</li>
+                                <li>MySQL</li>
+                                <li>Sequelize</li>
                             </ul>
                         </div>
                     </div>
