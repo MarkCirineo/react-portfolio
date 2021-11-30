@@ -1,16 +1,19 @@
 import React, { useState } from "react";
 import emailjs from "emailjs-com";
-import { Form, Button } from "react-bootstrap";
+import { Form, Button, Alert } from "react-bootstrap";
 import "./contact-me.css"
 
 const SERVICE_ID = process.env.REACT_APP_SERVICE_ID;
 const TEMPLATE_ID = process.env.REACT_APP_TEMPLATE_ID;
-const USER_ID = process.env.REACT_APP_USER_ID;
+// const USER_ID = process.env.REACT_APP_USER_ID;
+const USER_ID = undefined;
 
 export default function ContactMe() {
 
     const [userFormData, setUserFormData] = useState({ name: "", email: "", message: "" });
     const [validated] = useState(false);
+    const [showSuccessAlert, setShowSuccessAlert] = useState(false);
+    const [showErrorAlert, setShowErrorAlert] = useState(false);
 
     const handleInputChange = (e) => {
         const { name, value } = e.target;
@@ -23,10 +26,11 @@ export default function ContactMe() {
         try {
             const result = await emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, USER_ID);
             console.log(result.text);
+            setShowSuccessAlert(true);
         } catch (err) {
             console.log(err);
+            setShowErrorAlert(true);
         }
-
 
         setUserFormData({ name: "", email: "", message: "" });
     }
@@ -34,6 +38,12 @@ export default function ContactMe() {
     return (
         <div className="container pt-4">
             <Form noValidate validated={validated} onSubmit={handleFormSubmit}>
+                <Alert dismissible onClose={() => setShowSuccessAlert(false)} show={showSuccessAlert} variant="success">
+                    Email sent!
+                </Alert>
+                <Alert dismissible onClose={() => setShowErrorAlert(false)} show={showErrorAlert} variant="danger">
+                    Something went wrong! Click <a href="mailto:markcirineo22@gmail.com">here</a> to try a different method.
+                </Alert>
                 <Form.Group>
                     <Form.Label htmlFor="name">
                         Name
