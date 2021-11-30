@@ -1,19 +1,39 @@
 import React, { useState } from "react";
+import emailjs from "emailjs-com";
 import { Form, Button } from "react-bootstrap";
 import "./contact-me.css"
+
+const SERVICE_ID = process.env.REACT_APP_SERVICE_ID;
+const TEMPLATE_ID = process.env.REACT_APP_TEMPLATE_ID;
+const USER_ID = process.env.REACT_APP_USER_ID;
 
 export default function ContactMe() {
 
     const [userFormData, setUserFormData] = useState({ name: "", email: "", message: "" });
+    const [validated] = useState(false);
 
     const handleInputChange = (e) => {
         const { name, value } = e.target;
         setUserFormData({ ...userFormData, [name]: value});
     }
     
+    const handleFormSubmit = async (e) => {
+        e.preventDefault();
+
+        try {
+            const result = await emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, USER_ID);
+            console.log(result.text);
+        } catch (err) {
+            console.log(err);
+        }
+
+
+        setUserFormData({ name: "", email: "", message: "" });
+    }
+
     return (
         <div className="container pt-4">
-            <Form>
+            <Form noValidate validated={validated} onSubmit={handleFormSubmit}>
                 <Form.Group>
                     <Form.Label htmlFor="name">
                         Name
