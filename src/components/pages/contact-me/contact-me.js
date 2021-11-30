@@ -39,7 +39,7 @@ export default function ContactMe() {
     }
 
     return (
-        <div className="container pt-3 d-flex justify-content-center flex-column align-items-center">
+        <div className="container pt-3 d-flex justify-content-center flex-column align-items-center contact-me-main-div">
             <div className="bg-secondary text-center contact-me-header col-12 col-sm-9 col-md-5 col-lg-4">
                 <h1>Contact Me!</h1>
             </div>
@@ -106,15 +106,16 @@ export default function ContactMe() {
                     <Form.Control.Feedback type="invalid">
                         Message is required!
                     </Form.Control.Feedback>
-
-                    <Button
-                        disabled={!(userFormData.name && userFormData.email && userFormData.message)}
-                        type="submit"
-                        variant="success"
-                        className="bg-white text-dark"
-                    >
-                        Submit
-                    </Button>
+                    <div className="container-fluid justify-content-center d-flex">
+                        <Button
+                            disabled={!(userFormData.name && userFormData.email && userFormData.message)}
+                            type="submit"
+                            variant="success"
+                            className="contact-me-button col-8 col-md-5 col-lg-4 col-xl-3"
+                        >
+                            Submit
+                        </Button>
+                    </div>
                 </Form>
             </div>
         </div>

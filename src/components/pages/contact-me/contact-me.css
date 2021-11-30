@@ -1,6 +1,5 @@
-.button-a {
-    color: white !important;
-    text-decoration: none !important;
+.contact-me-main-div {
+    padding-bottom: 70px;    
 }
 
 .contact-me-div {
@@ -30,6 +29,10 @@
     
 }
 
-button {
-    background-color: #936fff !important;
+.contact-me-button {
+    background-color: #dcd1ff!important;
+    color: #626a70!important;
+    font-weight: 500!important;
+    font-size: 18px!important;
+    border-radius: 8px!important;
 }
