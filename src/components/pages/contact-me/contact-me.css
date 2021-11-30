@@ -3,19 +3,16 @@
     text-decoration: none !important;
 }
 
-h4 a {
-    color: #936fff;
-    text-decoration: none;
-}
-
-h4 {
-    color: #660fa0;
-}
-
 .contact-me-div {
     padding: 20px;
     border-radius: 8px;
-    /* color: #626a70; */
+}
+
+.contact-me-header {
+    color: #dcd1ff;
+    padding: 8px;
+    margin: 4px 0 20px;
+    border-radius: 8px;
 }
 
 .form-group {

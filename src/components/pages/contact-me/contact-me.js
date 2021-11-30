@@ -39,8 +39,10 @@ export default function ContactMe() {
     }
 
     return (
-        <div className="container pt-4 d-flex justify-content-center flex-column align-items-center">
-            
+        <div className="container pt-3 d-flex justify-content-center flex-column align-items-center">
+            <div className="bg-secondary text-center contact-me-header col-12 col-sm-9 col-md-5 col-lg-4">
+                <h1>Contact Me!</h1>
+            </div>
             <div className="col-sm-12 col-md-9 col-12 contact-me-div bg-secondary">
                 <Form noValidate validated={validated} onSubmit={handleFormSubmit}>
                     <Alert dismissible onClose={() => setShowSuccessAlert(false)} show={showSuccessAlert} variant="success">
