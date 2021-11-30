@@ -13,6 +13,7 @@ export default function ContactMe() {
     const [validated] = useState(false);
     const [showSuccessAlert, setShowSuccessAlert] = useState(false);
     const [showErrorAlert, setShowErrorAlert] = useState(false);
+    const [showInvalidEmailAlert, setShowInvalidEmailAlert] = useState(false);
 
     const handleInputChange = (e) => {
         const { name, value } = e.target;
@@ -21,17 +22,20 @@ export default function ContactMe() {
     
     const handleFormSubmit = async (e) => {
         e.preventDefault();
-
-        try {
-            const result = await emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, USER_ID);
-            console.log(result.text);
-            setShowSuccessAlert(true);
-        } catch (err) {
-            console.log(err);
-            setShowErrorAlert(true);
+        console.log(e.target.email.value);
+        if (/.+@.+\..+/.test(e.target.email.value)) {
+            try {
+                const result = await emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, USER_ID);
+                console.log(result.text);
+                setShowSuccessAlert(true);
+            } catch (err) {
+                console.log(err);
+                setShowErrorAlert(true);
+            }
+            setUserFormData({ name: "", email: "", message: "" });
+        } else {
+            setShowInvalidEmailAlert(true);
         }
-
-        setUserFormData({ name: "", email: "", message: "" });
     }
 
     return (
@@ -73,6 +77,9 @@ export default function ContactMe() {
                         required
                     />
                 </Form.Group>
+                <Alert dismissible onClose={() => setShowInvalidEmailAlert(false)} show={showInvalidEmailAlert} variant="danger">
+                    Invalid Email address!
+                </Alert>
                 <Form.Control.Feedback type="invalid">
                     Email is required!
                 </Form.Control.Feedback>
