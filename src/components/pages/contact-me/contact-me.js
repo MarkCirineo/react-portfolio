@@ -49,7 +49,7 @@ export default function ContactMe() {
                         Email sent!
                     </Alert>
                     <Alert dismissible onClose={() => setShowErrorAlert(false)} show={showErrorAlert} variant="danger">
-                        Something went wrong! Click <a href="mailto:markcirineo22@gmail.com">here</a> to try a different method.
+                        Something went wrong! Click <a className="alert-mail-link" href="mailto:markcirineo22@gmail.com">here</a> to try a different method.
                     </Alert>
                     <Form.Group>
                         <Form.Label htmlFor="name">
