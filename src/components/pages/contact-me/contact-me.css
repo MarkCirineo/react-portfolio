@@ -1,23 +1,65 @@
-.button-a {
-    color: white !important;
-    text-decoration: none !important;
+.contact-me-main-div {
+    padding-bottom: 70px;    
 }
 
-h4 a {
-    color: #936fff;
-    text-decoration: none;
+.contact-me-div {
+    padding: 20px;
+    border-radius: 8px;
 }
 
-h4 {
-    color: #660fa0;
+.contact-me-header {
+    color: #dcd1ff;
+    padding: 8px;
+    margin: 4px 0 16px;
+    border-radius: 8px;
 }
 
-button {
-    background-color: #936fff !important;
+.form-group {
+    background-color: #dcd1ff;
+    margin: 18px 10px;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
 }
 
-label {
-    color: #660fa0;
-    font-size: 17px;
-    font-weight: 400;
+.form-label {
+    color: #626a70;
+    font-size: 20px;
+    font-weight: 600;
+    
+}
+
+.alert-success .close {
+    border: 0;
+    border-radius: 6px;
+    background-color: #d1e7dd;
+    color: #008332;
+    font-weight: 800;
+    font-size: 18px;
+}
+
+.alert-danger .close {
+    border: 0;
+    border-radius: 6px;
+    background-color: #f8d7da;
+    color: #dc3545;
+    font-weight: 800;
+    font-size: 18px;
+}
+
+.alert-mail-link {
+    color: black;
+    font-weight: 500;
+}
+
+.alert-mail-link:hover {
+    color: rgb(201, 0, 0);
+}
+
+.contact-me-button {
+    background-color: #dcd1ff!important;
+    color: #626a70!important;
+    font-weight: 500!important;
+    font-size: 18px!important;
+    border-radius: 8px!important;
 }
