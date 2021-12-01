@@ -22,14 +22,12 @@ export default function ContactMe() {
     
     const handleFormSubmit = async (e) => {
         e.preventDefault();
-        console.log(e.target.email.value);
         if (/.+@.+\..+/.test(e.target.email.value)) {
             try {
                 const result = await emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, USER_ID);
                 console.log(result.text);
                 setShowSuccessAlert(true);
             } catch (err) {
-                console.log(err);
                 setShowErrorAlert(true);
             }
             setUserFormData({ name: "", email: "", message: "" });
