@@ -29,6 +29,33 @@
     
 }
 
+.alert-success .close {
+    border: 0;
+    border-radius: 6px;
+    background-color: #d1e7dd;
+    color: #008332;
+    font-weight: 800;
+    font-size: 18px;
+}
+
+.alert-danger .close {
+    border: 0;
+    border-radius: 6px;
+    background-color: #f8d7da;
+    color: #dc3545;
+    font-weight: 800;
+    font-size: 18px;
+}
+
+.alert-mail-link {
+    color: black;
+    font-weight: 500;
+}
+
+.alert-mail-link:hover {
+    color: rgb(201, 0, 0);
+}
+
 .contact-me-button {
     background-color: #dcd1ff!important;
     color: #626a70!important;
