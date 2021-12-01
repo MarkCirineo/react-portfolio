@@ -14,7 +14,7 @@ function Home() {
                     <Link className="link col-lg-7 col-md-8 col-sm-10 col-xs-12 text-center" to="/portfolio">View My Work</Link>
                     <a className="link col-lg-7 col-md-8 col-sm-10 col-xs-12 text-center" href="https://www.github.com/markcirineo/" target="_blank" rel="noreferrer">Visit my GitHub</a>
                     <a className="link col-lg-7 col-md-8 col-sm-10 col-xs-12 text-center" href="https://www.linkedin.com/in/mark-cirineo/" target="_blank" rel="noreferrer">Visit my LinkedIn</a>
-                    <a className="link col-lg-7 col-md-8 col-sm-10 col-xs-12 text-center" href="mailto:markcirineo">Send me an email at markcirineo22@gmail.com</a>
+                    <a className="link col-lg-7 col-md-8 col-sm-10 col-xs-12 text-center" href="mailto:markcirineo22@gmail.com">Send me an email at markcirineo22@gmail.com</a>
                 </div>
             </div>
         </div>
