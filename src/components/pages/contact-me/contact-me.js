@@ -5,7 +5,8 @@ import "./contact-me.css"
 
 const SERVICE_ID = process.env.REACT_APP_SERVICE_ID;
 const TEMPLATE_ID = process.env.REACT_APP_TEMPLATE_ID;
-const USER_ID = process.env.REACT_APP_USER_ID;
+// const USER_ID = process.env.REACT_APP_USER_ID;
+const USER_ID = undefined
 
 export default function ContactMe() {
 
@@ -22,14 +23,12 @@ export default function ContactMe() {
     
     const handleFormSubmit = async (e) => {
         e.preventDefault();
-        console.log(e.target.email.value);
         if (/.+@.+\..+/.test(e.target.email.value)) {
             try {
                 const result = await emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, USER_ID);
                 console.log(result.text);
                 setShowSuccessAlert(true);
             } catch (err) {
-                console.log(err);
                 setShowErrorAlert(true);
             }
             setUserFormData({ name: "", email: "", message: "" });
