@@ -29,10 +29,11 @@
 .resume-header {
     background-color: rgb(108, 117, 125);
     border-radius: 8px;
+    padding: 4px 0;
 }
 
 ul {
-    margin-bottom: 8px!important;
+    margin-bottom: 10px!important;
 }
 
 li {
