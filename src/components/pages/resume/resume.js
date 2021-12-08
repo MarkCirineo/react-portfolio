@@ -15,27 +15,44 @@ export default function Resume() {
                 </div>
                 <div className="container">
                     <div className="row d-flex justify-content-evenly">
-                        <div className="col-xl-5 col-lg-10 col-md-12 col-12 d-flex flex-column align-items-center front-end-div">  
-                            <h3>Front-end Proficiencies</h3>
-                            <ul className="resume-ul text-center">
-                                <li>React</li>
-                                <li>JavaScript</li>
-                                <li>HTML</li>
-                                <li>CSS</li>
-                                <li>jQuery</li>
-                                <li>Bootstrap</li>
-                            </ul>
+                        <div className="col-xl-8 col-lg-10 col-md-12 col-12 d-flex flex-column align-items-center technology-div">
+                            <h3>Technologies</h3>
+                            <div className="container d-flex flex-wrap justify-content-evenly align-items-center">
+                                <ul className="resume-ul col-11 col-md-10 text-center d-flex flex-wrap justify-content-center">
+                                    <li>JavaScript</li>
+                                    <li>Node.js</li>
+                                    <li>React</li>
+                                    <li>Express.js</li>
+                                    <li>MongoDB</li>
+                                    <li>GraphQL</li>
+                                    <li>RESTful APIs</li>
+                                    <li>Mongoose</li>
+                                    <li>MySQL</li>
+                                    <li>Bootstrap</li>
+                                    <li>HTML5</li>
+                                    <li>CSS3</li>
+                                    <li>Sequelize</li>
+                                    <li>jQuery</li>
+                                    <li>Handlebars</li>
+                                    <li>Materialize</li>
+                                </ul>
+                            </div>
                         </div>
-                        <div className="col-xl-5 col-lg-10 col-md-12 col-12 d-flex flex-column align-items-center back-end-div">  
-                            <h3>Back-end Proficiencies</h3>
-                            <ul className="resume-ul text-center">
-                                <li>Node</li>
-                                <li>Express</li>
-                                <li>MongoDB</li>
-                                <li>Mongoose</li>
-                                <li>MySQL</li>
-                                <li>Sequelize</li>
-                            </ul>
+                        <div className="col-xl-8 col-lg-10 col-md-12 col-12 d-flex flex-column align-items-center skill-div">
+                            <h3>Skills</h3>
+                            <div className="container d-flex flex-wrap justify-content-evenly align-items-center">
+                                <ul className="resume-ul col-11 col-md-10 text-center d-flex flex-wrap justify-content-center">
+                                    <li>Semantic HTML</li>
+                                    <li>Responsive Design</li>
+                                    <li>OOP</li>
+                                    <li>Git Flow</li>
+                                    <li>MVC</li>
+                                    <li>Heroku</li>
+                                    <li>Wireframing</li>
+                                    <li>DOM manipulation</li>
+                                    <li>Version control</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
