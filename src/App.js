@@ -9,7 +9,7 @@ import Home from "./components/pages/home/home";
 import { HashRouter, Route, Routes } from "react-router-dom";
 
 function App() {
-    const [currentPage, setCurrentPage] = useState("About Me");
+    const [currentPage, setCurrentPage] = useState("Home page");
     const handlePageChange = (page) => setCurrentPage(page);
 
     return (
