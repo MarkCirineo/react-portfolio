@@ -1,6 +1,6 @@
 import React from "react";
-import mark from "../../../assets/mark.png"
-import "./about-me.css"
+import mark from "../../../assets/mark.png";
+import "./about-me.css";
 
 export default function AboutMe() {
 
@@ -19,8 +19,9 @@ export default function AboutMe() {
                     <div className="col-lg-10 col-sm-11 d-flex align-items-center text-center bg-secondary description-div">
                         <p className="about-me-p">
                             My name is Mark. I am a Full-stack web developer with a certificate from the University of Pennsylvania. 
-                            I'm proficient in HTML, CSS, JavaScript, MySQL, and MongoDB. I enjoy working with technologies including Node.js, Express.js, and ReactJS.
-                            I also have experience working with Sequelize, Mongoose, jQuery, Jest, Handlebars, Bootstrap and Materialize.
+                            I'm proficient in HTML, CSS, JavaScript, MySQL, and MongoDB. I enjoy working with technologies including Node.js, Express.js, and React.js.
+                            I also have experience working with GraphQL, RESTful APIs, Mongoose, Sequelize, jQuery, Jest, Handlebars, Bootstrap and Materialize. 
+                            As an eager learner and effective collaborator I’m looking forward to bringing my technical skills to a company to work and grow.
                         </p>
                     </div>
                 </div>
