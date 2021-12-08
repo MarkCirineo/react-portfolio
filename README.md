@@ -6,17 +6,28 @@
 This website is a portfolio of all my previous work. It serves as a place employers can view my previous work to assess my skills as a potential employee, as well as how to contact me. It was built using React.
 
 ## Table of Contents
-- [Installation](#installation)
 - [Usage](#usage)
+- [Installation](#installation)
 - [License](#license)
 - [How To Contribute](#how-to-contribute)
 - [Tests](#tests)
 - [Questions](#questions)
-## Installation
-You can download the files from the GitHub repo.
 
 ## Usage
 You can visit the website [here](https://markcirineo.github.io/react-portfolio/)
+
+![screenshot of the home page](./src/assets/homepage.png)
+
+![screenshot of the portfolio page](./src/assets/portfoliopage.png)
+
+## Installation
+You can use the application through the link above or follow the instructions below to run the files locally.
+
+- Clone the repository to use the files
+- Set up the environment variables in a .env file
+- Run "npm i" in a terminal at the root directory level to install the dependencies (You need to have Node.js installed on your machine)
+- Run "npm run start" in the terminal to run the application
+- Go to http://localhost:3000/ in your browser to use the application
 
 ## License
 MIT License
