@@ -21,7 +21,13 @@ You can visit the website [here](https://markcirineo.github.io/react-portfolio/)
 ![screenshot of the portfolio page](./src/assets/portfoliopage.png)
 
 ## Installation
-You can download the files from the GitHub repo.
+You can use the application through the link above or follow the instructions below to run the files locally.
+
+- Clone the repository to use the files
+- Set up the environment variables in a .env file
+- Run "npm i" in a terminal at the root directory level to install the dependencies (You need to have Node.js installed on your machine)
+- Run "npm run start" in the terminal to run the application
+- Go to http://localhost:3000/ in your browser to use the application
 
 ## License
 MIT License
