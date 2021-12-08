@@ -1,6 +1,6 @@
 import React from "react";
-import "./resume.css"
-import resume from "./resume.pdf"
+import "./resume.css";
+import resume from "./resume.pdf";
 
 export default function Resume() {
 
@@ -10,7 +10,7 @@ export default function Resume() {
                 <div className="justify-content-center d-flex containter-fluid mt-3 mb-2">
                     <div className="d-flex align-items-center flex-column resume-header col-12 col-md-10 col-lg-7 col-xl-5">
                         <h1 className="resume-h1">Resume</h1>
-                        <a href={resume} target="_blank" rel="noreferrer" className="resume text-center" download>Download my resume!</a>
+                        <a href={resume} target="_blank" rel="noreferrer" className="resume text-center" download>Click here to download my resume!</a>
                     </div>
                 </div>
                 <div className="container">
@@ -21,7 +21,7 @@ export default function Resume() {
                                 <ul className="resume-ul col-11 col-md-10 text-center d-flex flex-wrap justify-content-center">
                                     <li>JavaScript</li>
                                     <li>Node.js</li>
-                                    <li>React</li>
+                                    <li>React.js</li>
                                     <li>Express.js</li>
                                     <li>MongoDB</li>
                                     <li>GraphQL</li>
@@ -49,6 +49,7 @@ export default function Resume() {
                                     <li>MVC</li>
                                     <li>Heroku</li>
                                     <li>Wireframing</li>
+                                    <li>PWAs</li>
                                     <li>DOM manipulation</li>
                                     <li>Version control</li>
                                 </ul>
