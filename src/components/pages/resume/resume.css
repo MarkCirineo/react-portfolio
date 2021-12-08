@@ -23,7 +23,7 @@
 }
 
 .resume-ul {
-    padding: 0 !important;
+    padding: 0!important;
 }
 
 .resume-header {
@@ -39,30 +39,34 @@ li {
     color: #626a70;
     font-weight: 500;
     background-color: #dcd1ff;
-    margin: 10px 0;
+    margin: 10px 8px;
     border-radius: 6px;
     padding: 2px 24px;
     list-style: none;
-    font-size: 120% !important;
+    font-size: 125% !important;
 }
 
 .main-resume-div{
     padding-bottom: 70px;
 }
 
-.front-end-div, .back-end-div {
+.technology-div, .skill-div {
     background-color: rgb(108, 117, 125);
     border-radius: 8px;
-    margin-top: 10px!important;
+    margin-top: 16px!important;
     padding: 8px 0 0;
 }
 
-.front-end-div h3, .back-end-div h3 {
+.skill-div {
+    margin-top: 20px!important;
+}
+
+.technology-div h3, .skill-div h3 {
     background-color: #dcd1ff;
-    font-size: 210% !important;
+    font-size: 215% !important;
     text-align: center;
     color: #626a70;
-    padding: 6px 12px;
+    padding: 6px 14px;
     border-radius: 8px;
     margin-top: 4px;
 }
