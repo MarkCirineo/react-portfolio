@@ -3,21 +3,21 @@ import PortfolioCard from "./portfolioCard";
 import "./portfolio.css"
 import techBlog from "./images/tech-blog.png";
 import gotYouCupboard from "./images/got-you-cupboard.png";
-import workoutTracker from "./images/workout-tracker.png";
 import portfolio from "./images/portfolio.png";
 import bingeworthy from "./images/bingeworthy.png";
 import bookSearchEngine from "./images/book-search-engine.png";
+import hangman from "./images/hangman.png";
 
 export default function Portfolio() {
 
     const data = [
         {
-            name: "Tech Blog",
-            technologies: "ExpressJS, MySQL, Sequelize, NodeJS",
-            image: techBlog,
-            description: "A full-stack tech blog site that allows users to create an account and log in. Once logged in users can create, update and delete their own blog posts via authentication. Users can also view posts made by other users.",
-            githubLink: "https://github.com/MarkCirineo/tech-blog",
-            deployedLink: "https://rocky-inlet-23725.herokuapp.com/"
+            name: "Hangman",
+            technologies: "MERN Stack, GraphQL",
+            image: hangman,
+            description: "This is a full-stack application designed to give a fun experience playing Hangman. Users can simply go to the game page to play. Users can also create an account and save their scores (wins/losses).",
+            githubLink: "https://github.com/MarkCirineo/hangman",
+            deployedLink: "https://the-hangman-app.herokuapp.com/"
         },
         {
             name: "BingeWorthy",
@@ -26,6 +26,14 @@ export default function Portfolio() {
             description: "This is a full-stack application designed for movie lovers who want a centralized location for all the movies they want to watch. Users can search for any title, view more information about the movie, and add it to their account for future reference.",
             githubLink: "https://github.com/MarkCirineo/bingeworthy",
             deployedLink: "https://calm-taiga-38622.herokuapp.com/"
+        },
+        {
+            name: "Tech Blog",
+            technologies: "ExpressJS, MySQL, Sequelize, NodeJS",
+            image: techBlog,
+            description: "A full-stack tech blog site that allows users to create an account and log in. Once logged in users can create, update and delete their own blog posts via authentication. Users can also view posts made by other users.",
+            githubLink: "https://github.com/MarkCirineo/tech-blog",
+            deployedLink: "https://rocky-inlet-23725.herokuapp.com/"
         },
         {
             name: "Book Search Engine",
@@ -50,14 +58,6 @@ export default function Portfolio() {
             description: "This is the website you are looking at right now! It's a display of my previous work and how to contact me. It was built using ReactJS.",
             githubLink: "https://github.com/MarkCirineo/react-portfolio",
             deployedLink: "https://markcirineo.github.io/react-portfolio"
-        },
-        {
-            name: "Workout Tracker",
-            technologies: "ExpressJS, MongoDB, Mongoose, NodeJS",
-            image: workoutTracker,
-            description: "This web app is a simple workout tracker. You can create workouts and add exercises to them. You can also view your dashboard with a graph of previous workouts.",
-            githubLink: "https://github.com/MarkCirineo/workout-tracker",
-            deployedLink: "https://obscure-earth-62239.herokuapp.com/?id=61856f4fe3e3fb0016bf626c"
         }
     ]
 
